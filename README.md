@@ -7,7 +7,7 @@
 
 **Live Demo: [https://precision-apply.vercel.app](https://precision-apply.vercel.app)** 
 
-![PrecisionApply Screenshot](./assets/app-screenshot.png) *(Will add a screenshot Soon)*
+<img width="3200" height="3200" alt=" i save the " src="https://github.com/user-attachments/assets/64494de8-6ed7-4f04-b486-9a7570261432" />
 
 ## ✨ Why PrecisionApply?
 

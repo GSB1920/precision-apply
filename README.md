@@ -5,9 +5,14 @@
 
 > From overlooked to interviewed. PrecisionApply engineers your resume to pass the ATS and impress the hiring manager.
 
-**Live Demo: [https://precision-apply.vercel.app](https://precision-apply.vercel.app)** 
+**Live Demo: [https://precision-apply.vercel.app](https://precision-apply.vercel.app)**  (Work In Progress)
+<br>
+**Mockup: https://precisionapply.my.canva.site/**  (Regularly Updated)
 
 <img width="3200" height="3200" alt=" i save the " src="https://github.com/user-attachments/assets/64494de8-6ed7-4f04-b486-9a7570261432" />
+<img width="4269" height="2400" alt="2" src="https://github.com/user-attachments/assets/aa49c251-4d04-41c2-b4d3-bf0b1c05e7fe" />
+<img width="4269" height="2400" alt="1" src="https://github.com/user-attachments/assets/2f1ed12b-9f85-4520-b729-671361dfdc15" />
+<img width="4269" height="2400" alt="3" src="https://github.com/user-attachments/assets/77585e7a-a170-43ec-ac27-edbb38c7b48e" />
 
 ## ✨ Why PrecisionApply?
 

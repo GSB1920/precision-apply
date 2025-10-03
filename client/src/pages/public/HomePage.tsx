@@ -1,3 +1,4 @@
+// src/pages/public/HomePage.tsx
 import { CheckCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import FeatureCard from '@/components/common/FeatureCard'
@@ -15,13 +16,13 @@ import {
 
 const HomePage = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-slate-900 min-h-screen">
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-20">
+      <section className="container mx-auto px-6 py-20 bg-slate-900">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-white">
                 {HERO_CONTENT.title.prefix} <span className="text-red-400">{HERO_CONTENT.title.highlighted[0]}</span> {HERO_CONTENT.title.suffix} <span className="text-emerald-400">{HERO_CONTENT.title.highlighted[1]}</span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
@@ -51,9 +52,9 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="container mx-auto px-6 py-20">
+      <section id="features" className="container mx-auto px-6 py-20 bg-slate-800">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{FEATURES_CONTENT.title}</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">{FEATURES_CONTENT.title}</h2>
           <p className="text-xl text-slate-300">{FEATURES_CONTENT.subtitle}</p>
         </div>
         
@@ -65,9 +66,9 @@ const HomePage = () => {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="container mx-auto px-6 py-20">
+      <section id="how-it-works" className="container mx-auto px-6 py-20 bg-slate-900">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{HOW_IT_WORKS_CONTENT.title}</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">{HOW_IT_WORKS_CONTENT.title}</h2>
           <p className="text-xl text-slate-300">{HOW_IT_WORKS_CONTENT.subtitle}</p>
         </div>
         
@@ -79,9 +80,9 @@ const HomePage = () => {
       </section>
 
       {/* Social Proof Section */}
-      <section className="container mx-auto px-6 py-20">
+      <section className="container mx-auto px-6 py-20 bg-slate-800">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{SOCIAL_PROOF_CONTENT.title}</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">{SOCIAL_PROOF_CONTENT.title}</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 mb-12">
             {SOCIAL_PROOF_CONTENT.stats.map((stat, index) => (
               <div key={index} className="text-center">
@@ -115,7 +116,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="container mx-auto px-6 py-20">
+      <section className="container mx-auto px-6 py-20 bg-slate-900">
         <div className="bg-gradient-to-r from-sky-500 to-emerald-500 rounded-3xl p-12 text-center">
           <h2 className="text-4xl font-bold mb-4 text-white">{CTA_CONTENT.title}</h2>
           <p className="text-xl mb-8 text-white/90">{CTA_CONTENT.subtitle}</p>

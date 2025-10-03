@@ -1,3 +1,33 @@
+export const NAVIGATION_CONTENT = {
+    items: [
+      { label: 'Features', href: '#features' },
+      { label: 'How It Works', href: '#how-it-works' },
+      { label: 'Pricing', href: '#pricing' },
+    ],
+    authButton: 'Sign In'
+  } as const
+  
+  export const FOOTER_CONTENT = {
+    links: {
+      Product: [
+        { label: 'Features', href: '#features' },
+        { label: 'Pricing', href: '#pricing' },
+        { label: 'API', href: '#api' },
+      ],
+      Company: [
+        { label: 'About', href: '#about' },
+        { label: 'Blog', href: '#blog' },
+        { label: 'Careers', href: '#careers' },
+      ],
+      Support: [
+        { label: 'Help Center', href: '#help' },
+        { label: 'Contact', href: '#contact' },
+        { label: 'Privacy', href: '#privacy' },
+      ],
+    },
+    copyright: 'All rights reserved.'
+  } as const
+
 // src/constants/content.ts
 export const APP_CONFIG = {
     name: 'PrecisionApply',
@@ -78,6 +108,10 @@ export const APP_CONFIG = {
   
   export const SOCIAL_PROOF_CONTENT = {
     title: 'Trusted by Job Seekers Worldwide',
+    companySection: {
+        title: 'Our users have been hired by:',
+        companies: ['Google', 'Microsoft', 'Amazon', 'Apple', 'Meta']
+    },
     stats: [
       { value: '75%', label: 'Higher Interview Rate', color: 'emerald' },
       { value: '50K+', label: 'Resumes Optimized', color: 'sky' },

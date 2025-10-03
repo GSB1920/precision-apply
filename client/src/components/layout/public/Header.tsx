@@ -1,14 +1,9 @@
 import { Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { NAVIGATION_CONTENT, APP_CONFIG } from '../../../../constant/content'
 
 const PublicHeader = () => {
-  const navigationItems = [
-    { label: 'Features', href: '#features' },
-    { label: 'How It Works', href: '#how-it-works' },
-    { label: 'Pricing', href: '#pricing' },
-  ]
-
   return (
     <nav className="w-full bg-slate-900">
       <div className="container mx-auto px-6 py-4">
@@ -20,12 +15,12 @@ const PublicHeader = () => {
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <span className="text-xl font-bold text-white">PrecisionApply</span>
+            <span className="text-xl font-bold text-white">{APP_CONFIG.name}</span>
           </div>
 
           {/* Desktop Navigation - Centered */}
           <div className="hidden md:flex items-center space-x-8">
-            {navigationItems.map((item) => (
+            {NAVIGATION_CONTENT.items.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
@@ -39,7 +34,7 @@ const PublicHeader = () => {
           {/* Desktop Auth Button */}
           <div className="hidden md:block">
             <Button className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-lg transition-colors">
-              Sign In
+              {NAVIGATION_CONTENT.authButton}
             </Button>
           </div>
 
@@ -61,14 +56,15 @@ const PublicHeader = () => {
                           <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                       </div>
-                      <span className="font-bold text-white">PrecisionApply</span>
+                      <span className="font-bold text-white">{APP_CONFIG.name}</span>
                     </div>
                   </SheetTitle>
                 </SheetHeader>
                 
                 <div className="flex flex-col space-y-4 mt-6">
+                  {/* Mobile Navigation */}
                   <nav className="flex flex-col space-y-4">
-                    {navigationItems.map((item) => (
+                    {NAVIGATION_CONTENT.items.map((item) => (
                       <a
                         key={item.label}
                         href={item.href}
@@ -79,9 +75,10 @@ const PublicHeader = () => {
                     ))}
                   </nav>
                   
+                  {/* Mobile Auth Button */}
                   <div className="pt-4 border-t border-slate-700">
                     <Button className="bg-sky-500 hover:bg-sky-600 text-white w-full justify-start">
-                      Sign In
+                      {NAVIGATION_CONTENT.authButton}
                     </Button>
                   </div>
                 </div>

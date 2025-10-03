@@ -1,14 +1,5 @@
-// src/components/common/FeatureCard.tsx
-import React from 'react'
 import { CheckCircle, Zap } from 'lucide-react'
-
-interface FeatureCardProps {
-  icon: string
-  title: string
-  description: string
-  score?: number
-  keywords?: readonly string[]
-}
+import { FeatureCardProps } from './types'
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, score, keywords }) => {
   const renderIcon = () => {

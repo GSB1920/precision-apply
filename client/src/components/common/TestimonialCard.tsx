@@ -1,13 +1,4 @@
-// src/components/common/TestimonialCard.tsx
-import React from 'react'
-
-interface TestimonialCardProps {
-  name: string
-  role: string
-  content: string
-  initial: string
-  gradient: string
-}
+import { TestimonialCardProps } from './types'
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, role, content, initial, gradient }) => {
   return (

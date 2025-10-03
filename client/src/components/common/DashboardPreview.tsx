@@ -1,11 +1,5 @@
-// src/components/common/DashboardPreview.tsx
 import React from 'react'
-
-interface DashboardPreviewProps {
-  title: string
-  score: number
-  stats: ReadonlyArray<{ value: string; label: string; color: string }>
-}
+import { DashboardPreviewProps } from './types'
 
 const DashboardPreview: React.FC<DashboardPreviewProps> = ({ title, score, stats }) => {
   return (

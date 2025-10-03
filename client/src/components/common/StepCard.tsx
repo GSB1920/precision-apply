@@ -1,12 +1,5 @@
 import { Upload, CheckCircle, Download } from 'lucide-react'
-
-interface StepCardProps {
-  step: string
-  title: string
-  description: string
-  icon: string
-  index: number
-}
+import { StepCardProps } from './types'
 
 const StepCard: React.FC<StepCardProps> = ({ step, title, description, icon, index }) => {
   const colors = [

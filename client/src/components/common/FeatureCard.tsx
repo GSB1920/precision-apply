@@ -7,7 +7,7 @@ interface FeatureCardProps {
   title: string
   description: string
   score?: number
-  keywords?: string[]
+  keywords?: readonly string[]
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, score, keywords }) => {

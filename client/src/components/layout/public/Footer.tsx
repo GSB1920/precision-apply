@@ -1,23 +1,7 @@
+import { FOOTER_CONTENT, APP_CONFIG } from '../../../../constant/content'
+
 const Footer = () => {
   const currentYear = new Date().getFullYear()
-
-  const footerLinks = {
-    Product: [
-      { label: 'Features', href: '#features' },
-      { label: 'Pricing', href: '#pricing' },
-      { label: 'API', href: '#api' },
-    ],
-    Company: [
-      { label: 'About', href: '#about' },
-      { label: 'Blog', href: '#blog' },
-      { label: 'Careers', href: '#careers' },
-    ],
-    Support: [
-      { label: 'Help Center', href: '#help' },
-      { label: 'Contact', href: '#contact' },
-      { label: 'Privacy', href: '#privacy' },
-    ],
-  }
 
   return (
     <footer className="w-full bg-slate-900 border-t border-slate-700">
@@ -31,15 +15,15 @@ const Footer = () => {
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <span className="text-xl font-bold text-white">PrecisionApply</span>
+              <span className="text-xl font-bold text-white">{APP_CONFIG.name}</span>
             </div>
             <p className="text-slate-400">
-              Engineering resumes for interview success.
+              {APP_CONFIG.tagline}
             </p>
           </div>
 
           {/* Links Sections */}
-          {Object.entries(footerLinks).map(([title, links]) => (
+          {Object.entries(FOOTER_CONTENT.links).map(([title, links]) => (
             <div key={title}>
               <h4 className="font-semibold text-white mb-4">{title}</h4>
               <ul className="space-y-2">
@@ -61,7 +45,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-slate-700 mt-12 pt-8 text-center">
           <p className="text-slate-400">
-            © {currentYear} PrecisionApply. All rights reserved.
+            © {currentYear} {APP_CONFIG.name}. {FOOTER_CONTENT.copyright}
           </p>
         </div>
       </div>

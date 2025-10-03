@@ -4,7 +4,7 @@ import React from 'react'
 interface DashboardPreviewProps {
   title: string
   score: number
-  stats: Array<{ value: string; label: string; color: string }>
+  stats: ReadonlyArray<{ value: string; label: string; color: string }>
 }
 
 const DashboardPreview: React.FC<DashboardPreviewProps> = ({ title, score, stats }) => {
